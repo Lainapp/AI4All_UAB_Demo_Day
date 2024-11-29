@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             background-color: #000; /* Black background */
             color: #fff; /* White text */
-            font-family: IBM Plex Sans JP;
+            font-family: 'IBM Plex Sans JP', sans-serif;
         }
         header {
             position: fixed;
@@ -43,6 +45,16 @@
         .video-demo {
             margin: 20px 0;
         }
+        /* Specific word styling */
+        .lainapp {
+            color: #ECC816; /* Yellow */
+        }
+        .festivals {
+            color: #C21761; /* Magenta */
+        }
+        .role {
+            color: #4D52DF; /* Blue */
+        }
     </style>
 </head>
 <body>
@@ -54,15 +66,18 @@
     <!-- Main Content -->
     <div class="container">
         <!-- Welcome Message -->
-        <h1>Benvinguts a Lainapp</h1>
-        <p>Un projecte nascut en el marc del programa AI4All de la UAB.</p>
+        <h1>
+            <span class="lainapp">Lainapp</span>, el teu assistent per a una experiència personalizada i única als 
+            <span class="festivals">festivals de música</span>.
+        </h1>
+        <p>Projecte nascut en el marc del programa AI4All de la UAB (Maig-Desembre 2024)</p>
 
         <!-- Presentation Download -->
         <h2>Descarrega el nostre Pitch Deck</h2>
         <a href="presentation.pptx" download>Descarrega</a>
 
         <!-- Video Demo -->
-        <h2>Visualitza la nostra Demo</h2>
+        <h2>Visualitza la nostra demo</h2>
         <div class="video-demo">
             <video controls width="100%">
                 <source src="demo.mp4" type="video/mp4">
@@ -74,23 +89,22 @@
         <h2>Coneix el nostre equip</h2>
         <div class="team">
             <div class="team-member">
-                <strong>Eduard (Direcció Estratègica)</strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+                <strong>Eduard <span class="role">(Direcció Estratègica)</span></strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
-          <div class="team-member">
-                <strong>Ana (Desenvolupament de Negoci)</strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <div class="team-member">
+                <strong>Ana <span class="role">(Desenvolupament de Negoci)</span></strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
-          <div class="team-member">
-                <strong>Lluis (Desenvolupament de Producte)</strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <div class="team-member">
+                <strong>Lluis <span class="role">(Desenvolupament de Producte)</span></strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
-          <div class="team-member">
-                <strong>Gemma (Intel·ligència de Negoci)</strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <div class="team-member">
+                <strong>Gemma <span class="role">(Intel·ligència de Negoci)</span></strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
-          <div class="team-member">
-                <strong>Ariana (Prototipatge)</strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+            <div class="team-member">
+                <strong>Ariana <span class="role">(Prototipatge)</span></strong> - <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
             </div>
         </div>
-
-        
     </div>
 </body>
 </html>
+
