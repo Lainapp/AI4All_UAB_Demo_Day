@@ -24,10 +24,12 @@
             align-items: center;
             padding: 0 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            transition: height 0.3s ease; /* Smooth transition for resizing */
         }
         header img {
-            height: 150px; /* Logo height */
-            margin-right: 150px;
+            height: auto; /* Let the image use its original size */
+            max-height: 60px; /* Make sure it fits the header initially */
+            transition: height 0.3s ease; /* Smooth transition for logo resize */
         }
         .container {
             max-width: 800px;
@@ -105,6 +107,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            var logo = document.querySelector('header img');
+            
+            // When scrolled more than 50px, reduce header height and logo size
+            if (window.scrollY > 50) {
+                header.style.height = '40px';
+                logo.style.height = '40px'; // Logo will scale down to 40px
+            } else {
+                header.style.height = '60px';
+                logo.style.height = 'auto'; // Logo returns to its original size
+            }
+        });
+    </script>
 </body>
 </html>
 
