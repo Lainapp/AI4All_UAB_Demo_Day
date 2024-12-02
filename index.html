@@ -9,15 +9,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
         }
         header img {
             max-width: 100px;
-            margin: 20px auto;
-            display: block;
         }
         .container {
             padding: 20px;
+            text-align: center;
         }
         h1 {
             font-size: 2em;
@@ -31,13 +37,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px; /* Space between images */
+            gap: 20px;
         }
         .images-container img {
-            max-width: 45%; /* Adjust image size */
-            height: auto;
             border: 2px solid #ccc;
-            border-radius: 8px; /* Optional: rounded corners */
+            border-radius: 8px;
         }
         /* Specific word styling */
         .lainapp {
@@ -48,6 +52,23 @@
         }
         .role {
             color: #4D52DF; /* Blue */
+        }
+        a {
+            color: #ECC816;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .team {
+            margin-top: 20px;
+        }
+        .team-member {
+            margin-bottom: 10px;
+        }
+        .video-demo video {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -79,7 +100,7 @@
         <!-- Video Demo -->
         <h2>Visualitza la nostra demo</h2>
         <div class="video-demo">
-            <video controls width="100%">
+            <video controls>
                 <source src="demo.mp4" type="video/mp4">
                 El teu navegador no suporta l'etiqueta de vídeo.
             </video>
