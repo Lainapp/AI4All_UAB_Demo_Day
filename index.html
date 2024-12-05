@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #000; 
-            color: #fff; 
+            color: #fff;
             font-family: 'IBM Plex Sans JP', sans-serif;
         }
         header {
@@ -22,17 +22,19 @@
             background-color: rgba(0, 0, 0, 0.8); 
             display: flex;
             align-items: center;
-            justify-content: space-between; 
             padding: 0 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
         header img {
-            height: 40px;
-            transition: height 0.3s ease; 
+            height: 40px; 
         }
-        header .right-logo {
-            height: 60px; /
-            align-self: center; 
+        .center-logo {
+            position: fixed;
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            height: 60px; 
+            transition: height 0.3s ease; 
         }
         .container {
             max-width: 800px;
@@ -50,12 +52,12 @@
         .video-demo {
             margin: 20px 0;
         }
-      
+        
         .lainapp {
             color: #ECC816; 
         }
         .festivals {
-            color: #C21761;
+            color: #C21761; 
         }
         .role {
             color: #4D52DF; 
@@ -63,11 +65,13 @@
     </style>
 </head>
 <body>
-    <!-- Header with Logos -->
+    <!-- Header with Logo -->
     <header>
         <img src="logo.svg" alt="Lainapp Logo"> 
-        <img src="Lainapp.svg" alt="Lainapp Right Logo" class="right-logo"> 
     </header>
+
+   
+    <img src="Lainapp.svg" alt="Lainapp Center Logo" class="center-logo">
 
     <!-- Main Content -->
     <div class="container">
@@ -114,5 +118,6 @@
 
 </body>
 </html>
+
 
 
