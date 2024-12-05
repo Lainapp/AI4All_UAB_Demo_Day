@@ -9,8 +9,8 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #000; 
-            color: #fff; 
+            background-color: #000;
+            color: #fff;
             font-family: 'IBM Plex Sans JP', sans-serif;
         }
         header {
@@ -34,16 +34,36 @@
             height: 40px;
         }
         .second-logo {
-            height: 60px;
+            height: 30px;
+            animation: wave 1.5s ease-in-out infinite; 
         }
+
+        @keyframes wave {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-5px);
+            }
+            50% {
+                transform: translateY(0);
+            }
+            75% {
+                transform: translateY(5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
         .container {
             max-width: 800px;
-            margin: 80px auto;
+            margin: 80px auto; 
             padding: 20px;
             text-align: center;
         }
         a {
-            color: #00c6c0;
+            color: #00c6c0; 
             text-decoration: none;
         }
         .team-member {
@@ -54,7 +74,7 @@
         }
         /* Specific styling */
         .lainapp {
-            color: #ECC816;
+            color: #ECC816; 
         }
         .festivals {
             color: #C21761;
@@ -68,8 +88,8 @@
     <!-- Header with Logos -->
     <header>
         <div class="logo-group">
-            <img src="logo.svg" alt="Lainapp Left Logo" class="left-logo">
-            <img src="Lainapp.svg" alt="Lainapp Second Logo" class="second-logo">
+            <img src="logo.svg" alt="Lainapp Left Logo" class="left-logo"> 
+            <img src="Lainapp.svg" alt="Lainapp Second Logo" class="second-logo"> 
         </div>
     </header>
 
@@ -118,3 +138,4 @@
 
 </body>
 </html>
+
