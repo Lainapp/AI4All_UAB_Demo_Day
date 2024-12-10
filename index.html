@@ -33,10 +33,6 @@
         .left-logo {
             height: 40px;
         }
-        .second-logo {
-            height: 30px;
-            animation: wave 1.5s ease-in-out infinite; 
-        }
 
         @keyframes wave {
             0% {
@@ -82,14 +78,25 @@
         .role {
             color: #4D52DF;
         }
+
+        /* Figma iframe styling */
+        .figma-container {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+        iframe {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            height: 450px;
+        }
     </style>
 </head>
 <body>
-    <!-- Header with Logos -->
+    <!-- Header with Logo -->
     <header>
         <div class="logo-group">
             <img src="logo.svg" alt="Lainapp Left Logo" class="left-logo"> 
-            <img src="Lainapp.svg" alt="Lainapp Second Logo" class="second-logo"> 
         </div>
     </header>
 
@@ -101,6 +108,12 @@
             <span class="festivals">festivals de música</span>.
         </h1>
         <p>Projecte nascut en el marc del programa AI4All de la UAB (Maig-Desembre 2024)</p>
+
+           <!-- Figma Interactive Prototype -->
+        <h2>Interactua amb el nostre prototip</h2>
+        <div class="figma-container">
+            <iframe src="https://embed.figma.com/proto/Thx42ac8cjtxZIkmOLeRov/LainAPP?page-id=6%3A654&node-id=413-852&node-type=frame&viewport=3069%2C1825%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=413%3A977&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+        </div>
 
         <!-- Presentation Download -->
         <h2>Descarrega el nostre Pitch Deck</h2>
@@ -138,4 +151,5 @@
 
 </body>
 </html>
+
 
