@@ -79,17 +79,26 @@
             color: #4D52DF;
         }
 
-        
         .figma-container {
             margin: 40px 0;
             display: flex;
-            flex-direction: column; 
+            flex-direction: row; /* Cambiado a 'row' */
             gap: 20px;
+            justify-content: space-between; /* Espaciado entre los iframes */
+            flex-wrap: wrap; /* Permite ajustar en filas si no hay suficiente espacio */
         }
+
         iframe {
             border: 1px solid rgba(0, 0, 0, 0.1);
-            width: 100%; 
+            width: calc(50% - 10px); /* Ocupa el 50% del contenedor menos el gap */
             height: 450px;
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 100%; /* Ajusta a pantalla completa en dispositivos pequeños */
+            }
         }
 
         .demo-title {
@@ -100,7 +109,6 @@
     </style>
 </head>
 <body>
- 
     <header>
         <div class="logo-group">
             <img src="logo.svg" alt="Lainapp Left Logo" class="left-logo"> 
@@ -119,15 +127,16 @@
         <!-- Figma Interactive Prototypes -->
         <h2>Interactua amb el nostre prototip</h2>
         <div class="figma-container">
-           
-            <div class="demo-title">Com si fossis part del públic</div>
-            <!-- First Prototype (iPhone) -->
-            <iframe src="https://embed.figma.com/proto/Thx42ac8cjtxZIkmOLeRov/LainAPP?page-id=6%3A654&node-id=413-977&node-type=instance&viewport=3061%2C2075%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=413%3A977&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
-
-         
-            <div class="demo-title">Com si fossis part de l'organització</div>
-            <!-- Second Prototype (iPad) -->
-            <iframe src="https://embed.figma.com/proto/qr1aAXq2FWbEob57ANI3zr/Lainapp?page-id=0%3A1&node-id=105-662&node-type=canvas&viewport=733%2C22%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=16%3A811&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            <div>
+                <div class="demo-title">Com si fossis part del públic</div>
+                <!-- First Prototype (iPhone) -->
+                <iframe src="https://embed.figma.com/proto/Thx42ac8cjtxZIkmOLeRov/LainAPP?page-id=6%3A654&node-id=413-977&node-type=instance&viewport=3061%2C2075%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=413%3A977&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            </div>
+            <div>
+                <div class="demo-title">Com si fossis part de l'organització</div>
+                <!-- Second Prototype (iPad) -->
+                <iframe src="https://embed.figma.com/proto/qr1aAXq2FWbEob57ANI3zr/Lainapp?page-id=0%3A1&node-id=105-662&node-type=canvas&viewport=733%2C22%2C0.04&scaling=scale-down&content-scaling=fixed&starting-point-node-id=16%3A811&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            </div>
         </div>
 
         <!-- Pitch Deck Download -->
@@ -163,7 +172,6 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
 
