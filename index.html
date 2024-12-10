@@ -53,7 +53,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 80px auto; 
             padding: 20px;
             text-align: center;
@@ -83,11 +83,12 @@
         .figma-container {
             margin: 40px 0;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
         }
         iframe {
             border: 1px solid rgba(0, 0, 0, 0.1);
-            max-width: 100%;
+            width: 48%; /* Make both iframes take up 48% of the container */
             height: 450px;
         }
     </style>
@@ -109,10 +110,14 @@
         </h1>
         <p>Projecte nascut en el marc del programa AI4All de la UAB (Maig-Desembre 2024)</p>
 
-           <!-- Figma Interactive Prototype -->
-        <h2>Interactua amb el nostre prototip</h2>
+        <!-- Figma Interactive Prototypes Side by Side -->
+        <h2>Interactua amb els nostres prototips</h2>
         <div class="figma-container">
-            <iframe src="https://embed.figma.com/proto/Thx42ac8cjtxZIkmOLeRov/LainAPP?page-id=6%3A654&node-id=413-852&node-type=frame&viewport=3069%2C1825%2C0.2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=413%3A977&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            <!-- First Prototype (iPhone) -->
+            <iframe src="https://embed.figma.com/design/Thx42ac8cjtxZIkmOLeRov/LainAPP?node-id=413-977&embed-host=share" allowfullscreen></iframe>
+
+            <!-- Second Prototype (iPad) -->
+            <iframe src="https://embed.figma.com/design/qr1aAXq2FWbEob57ANI3zr/Lainapp?node-id=105-662&embed-host=share" allowfullscreen></iframe>
         </div>
 
         <!-- Presentation Download -->
@@ -151,5 +156,6 @@
 
 </body>
 </html>
+
 
 
